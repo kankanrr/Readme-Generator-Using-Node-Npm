@@ -58,4 +58,9 @@ function genReadme (fileName, data) {
     });
 };
 
+const handleAnswers = (answers) => {
+    console.log(answers);
+    genReadme('README.md', markdownGen(answers));
+};
+
 // Initialization
