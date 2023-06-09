@@ -51,4 +51,11 @@ const readmeQuestions = [
 
 // Readme Gen Creation
 
+function genReadme (fileName, data) {
+    fs.writeFile(fileName, data, (err) => {
+        if (err) throw err;
+        console.log('Readme Generated & Saved');
+    });
+};
+
 // Initialization
