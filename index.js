@@ -20,7 +20,12 @@ const readmeQuestions = [
     {
         name: 'install',
         type: 'input',
-        message: 'Project Usagee:'
+        message: 'Installation Instructions:'
+    },
+    {
+        name: "usage",
+        type: "input",
+        message: "Usage Information:"
     },
     {
         name: 'license',

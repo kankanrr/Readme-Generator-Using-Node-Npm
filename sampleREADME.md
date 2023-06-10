@@ -1,4 +1,4 @@
-# Reademe Generator
+# Readme Generator
 
     ## Table of Contents
   
@@ -9,11 +9,11 @@
     
     ## Installation
     
-    Use "node index" to run the script then input info
+    Clone repo and run "node index"
     
     ## Usage
     
-    undefined
+    You will be prompted questions to fill in for the readme
     
     ## License
     
