@@ -37,7 +37,7 @@ function renderLicenseSection (license) {
 // markdown gen
 
 function markdownGen (data) {
-    return `# ${data.projectTitle}
+    return `# ${data.title}
 
     ## Table of Contents
   
