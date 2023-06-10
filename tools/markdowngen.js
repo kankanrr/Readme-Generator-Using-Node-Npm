@@ -22,6 +22,8 @@ function renderLink (license) {
     } else return '';
 }
 
+// Render the section function
+
 function renderLicenseSection (license) {
     if (license === 'MIT License') {
         return 'MIT License';
@@ -30,5 +32,49 @@ function renderLicenseSection (license) {
     } else if (license === 'GMU') {
         return 'GMU';
     } else return '';
+}
+
+// markdown gen
+
+function markdownGen (data) {
+    return `# ${data.projectTitle}
+
+    ## Table of Contents
+  
+    - [Installation](#installation)
+    - [Usage](#usage)
+    - [Credits](#credits)
+    - [License](#license)
+    
+    ## Installation
+    
+    ${data.install}
+    
+    ## Usage
+    
+    ${data.usage}
+    
+    ## License
+    
+    ${renderLicenseSection(data.license)}
+    ${renderLink(data.license)}
+    ${renderBadge(data.license)}
+    
+    ## How to Contribute
+    
+    ${data.contribution}
+    
+    ## Tests
+    
+    ${data.tests}
+  
+    ## Questions
+  
+    GitHub Username: ${data.githubUsername}
+  
+    https://github.com/${data.githubUsername}
+  
+    Email: ${data.email}.
+  `;
 }
 
