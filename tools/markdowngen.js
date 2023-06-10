@@ -78,3 +78,4 @@ function markdownGen (data) {
   `;
 }
 
+module.exports = markdownGen;

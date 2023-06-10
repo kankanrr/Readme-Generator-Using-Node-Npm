@@ -2,6 +2,7 @@
 
 const inquirer = require('inquirer');
 const fs = require('fs');
+const markdownGen = require('./tools/markdowngen.js');
 
 // Readme Gen Questions
 
@@ -64,3 +65,10 @@ const handleAnswers = (answers) => {
 };
 
 // Initialization
+
+function initialize() {
+    inquirer
+        .prompt(readmeQuestions).then(handleAnswers);
+}
+
+initialize();
